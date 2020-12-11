@@ -1,70 +1,64 @@
 <html>
 
 	<head>
-  	<link rel="stylesheet" type="text/css" href="style.css">	
-  	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
-  	<link 
-  		rel="stylesheet"
-  		href="prism-atom-dark.css"
-  		type="text/css"
-  		media="screen">
-    
-  	<script type="text/javascript" src="prism.js"></script>
-  	<script type="text/javascript" src="prism.ruby.js"></script>
-    
-		<title>Luis Rosado Portfolio</title>	
-		<meta name="description" content="Luis Rosado is a professional software engineer specializing in full-stack development. He has extensive experience with Ruby, Rails, JavaScript, and building web applications.">
-	</head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="prism-atom-dark.css" type="text/css" media="screen">
 
-	<body>
-	<div class="about-container">	
-		<ul>
-			<li><a href="#about" class="nav-link">About</a></li>
-			<li><a href="#code-samples" class="nav-link">Code Samples</a></li>
-			<li><a href="#web-apps" class="nav-link">Web Apps</a></li>
-			<li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
-			<li class="hire-me"><a href="#hire-me" class="nav-link">Hire Me</a></li>
-		</ul>
-		<div class="about">
-			
-			<img src="me.jpg" class="me">
+    <script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="prism.ruby.js"></script>
+    <title>Luis Rosado Portfolio</title>
+    <meta name="description" content="Luis Rosado is a professional software engineer specializing in full-stack development. He has extensive experience with Ruby, Rails, JavaScript, and building web applications.">
+</head>
 
-			<h1>
-        <span class="first-name">Luis</span> Rosado
-      </h1>
+<body>
+    <div class="about-container">
+        <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+            <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+            <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+            <li class="hire-me"><a href="#hire-me" class="nav-link">Hire Me</a></li>
+        </ul>
+        <div class="about">
+            <br /><br />
+            <img src="me.jpg" class="me"> 
+            <h1>
+                <span class="first-name">Luis</span> Rosado
+            </h1>
 
-			<h2 id="about">SOFTWARE ENGINEER</h2>
+            <h2 id="about">SOFTWARE ENGINEER</h2>
 
-			<hr class="grey">
+            <hr class="grey">
 
-			<p class="bio">I am a Junior Developer who started off self-taught but chose to enroll in a bootcamp. Now, as a bootcamp grad I am confident in the technologies I picked up will help me create awesome web applications. Looking to gain real-world experience.
-      </p>
-      <br />
-	  </div>	
-	</div>
+            <p class="bio">I am a Junior Developer who started off self-taught but chose to enroll in a bootcamp. Now, as a bootcamp grad I am confident in the technologies I picked up will help me create awesome web applications. Looking to gain real-world experience.
+            </p>
+            <br />
+        </div>
+    </div>
 
-	<h3 id="code-samples">Code Snippets</h3>
-	<hr class="yellow">
+    <h3 id="code-samples">Code Snippets</h3>
+    <hr class="yellow">
 
-	<div class="box">
-		<h4>Temperature Conversion</h4>
-		<p>This Ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.</p>
-	</div>
+    <div class="box">
+        <h4>Temperature Conversion</h4>
+        <p>This Ruby program will prompt the user for a temperature in degrees Celsius and let the user know what the corresponding temperature is in Fahrenheit.</p>
+    </div>
 
-	<div class="box">
-		<pre><code class="language-ruby">
+    <div class="box">
+        <pre><code class="language-ruby">
 puts &quot;Enter degrees in Celcius:&quot;
 celcius = gets.chomp
 
 farenheit = (celcius.to_f * 9/5) + 32
 
 puts &quot;The temperature is #{farenheit} degrees Fahrenheit&quot;</code></pre>
-	</div>
+    </div>
 
-	<br class="clear" />
+    <br class="clear" />
 
-		<div class="box">
-		<pre><code class="language-ruby">
+    <div class="box">
+        <pre><code class="language-ruby">
 puts &quot;Enter a number&quot;
 input = gets.chomp.to_i
 
@@ -80,22 +74,22 @@ if teen_exceptions.include?(input)
     else
         puts &quot;You are #{input}th&quot;
 end</code></pre>
-	</div>
+    </div>
 
-	<div class="box">
-		<h4>Ordinal Challenge</h4>
-		<p>This Ruby program will convert a plain number to the ordinal of the number. So for example, if the user enters a 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.</p>
-	</div>
+    <div class="box">
+        <h4>Ordinal Challenge</h4>
+        <p>This Ruby program will convert a plain number to the ordinal of the number. So for example, if the user enters a 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.</p>
+    </div>
 
-	<br class="clear" />
+    <br class="clear" />
 
-	<div class="box">
-		<h4>FooBar</h4>
-		<p>This Ruby program is an adaptation of a classic technical interview problem which displays sequences of the FooBar pattern.</p>
-	</div>
+    <div class="box">
+        <h4>FooBar</h4>
+        <p>This Ruby program is an adaptation of a classic technical interview problem which displays sequences of the FooBar pattern.</p>
+    </div>
 
-	<div class="box">
-		<pre><code class="language-ruby">
+    <div class="box">
+        <pre><code class="language-ruby">
 puts &quot;How many items do you want to see?&quot;
 input = gets.to_i
 
@@ -112,64 +106,64 @@ numbers.each do |inputs|
         puts &quot;#{inputs}&quot;
     end
 end</code></pre>
-	</div>
+    </div>
 
-	<br class="clear" />
+    <br class="clear" />
 
-	<h3 id=web-apps>Web Apps</h3>
-	<hr class="yellow">
-
-	<div class="box">
-		<h4><a href="https://splurty-luis-rosado.herokuapp.com/" target="_blank">Quote Generator</a></h4>
-		<img src="splurty.png" class="full-width"/>
-		<p>A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and GitHub for version control, and launched on Heroku.</p>
-	</div>
+    <h3 id=web-apps>Web Apps</h3>
+    <hr class="yellow">
 
     <div class="box">
-      <h4><a href="https://nomster-luis-rosado.herokuapp.com/" target="_blank">Yelp Clone</a></h4>
-      <img src="nomster.png" class="full-width" />
-      <p>
-        A Yelp clone that integrates with the Google Maps API
-        and includes features like user comments, star ratings,
-        image uploading, and user authentication.
-      </p>
+        <h4><a href="https://splurty-luis-rosado.herokuapp.com/" target="_blank">Quote Generator</a></h4>
+        <img src="splurty.png" class="full-width" />
+        <p>A database-powered quote generator with a mobile-first design, using the Ruby on Rails framework, HTML, and CSS. Uses Git and GitHub for version control, and launched on Heroku.</p>
+    </div>
+
+    <div class="box">
+        <h4><a href="https://nomster-luis-rosado.herokuapp.com/" target="_blank">Yelp Clone</a></h4>
+        <img src="nomster.png" class="full-width" />
+        <p>
+            A Yelp clone that integrates with the Google Maps API
+            and includes features like user comments, star ratings,
+            image uploading, and user authentication.
+        </p>
     </div>
     <br class="clear" />
 
     <div class="box">
-      <h4><a href="https://flixter-luis-codes.herokuapp.com/" target="_blank">Two-Sided Market Place</a></h4>
-      <img src="flixter.png" class="full-width" />
-      <p>
-        A two-sided, video-streaming marketplace platform that
-        features credit card payment capabilities, user role
-        management, complex user interfaces, and advanced
-        database relationships.
-      </p>
+        <h4><a href="https://flixter-luis-codes.herokuapp.com/" target="_blank">Two-Sided Market Place</a></h4>
+        <img src="flixter.png" class="full-width" />
+        <p>
+            A two-sided, video-streaming marketplace platform that
+            features credit card payment capabilities, user role
+            management, complex user interfaces, and advanced
+            database relationships.
+        </p>
     </div>
     <div class="box">
-      <h4><a href="https://grammable-luis-codes.herokuapp.com/" target="_blank">Test Driven Development</a></h4>
-      <img src="grammable.png" class="full-width" />
-      <p>
-        An Instagram clone that was built using industry-standard, test-driven
-        development following numerous red/green/refactor cycles.
-      </p>
+        <h4><a href="https://grammable-luis-codes.herokuapp.com/" target="_blank">Test Driven Development</a></h4>
+        <img src="grammable.png" class="full-width" />
+        <p>
+            An Instagram clone that was built using industry-standard, test-driven
+            development following numerous red/green/refactor cycles.
+        </p>
     </div>
     <br class="clear" />
     <div class="box">
-      <h4><a href="https://todoster-luis-rosado.herokuapp.com/" target="_blank"> Single Page Todo Application</a></h4>
-      <img src="todoster.png" class="full-width" />
-      <p>
-        This single-page to-do application features a
-        fluid user interface that– by using JavaScript–
-        allows users to rapidly add dynamic content.
-      </p>
+        <h4><a href="https://todoster-luis-rosado.herokuapp.com/" target="_blank"> Single Page Todo Application</a></h4>
+        <img src="todoster.png" class="full-width" />
+        <p>
+            This single-page to-do application features a
+            fluid user interface that– by using JavaScript–
+            allows users to rapidly add dynamic content.
+        </p>
     </div>
     <div class="box">
-      <h4><a href="https://sweets-by-nikki.herokuapp.com/" target="_blank">Final Project</a></h4>
-      <img src="chess.png" class="full-width" />
-      <p>
-        On my final project I built a site for a home bussiness owner. She wanted a site where she could display some of her products as well as the pricing. Payment system was introduced but not implemented due to how the bussiness is run.
-      </p>
+        <h4><a href="https://sweets-by-nikki.herokuapp.com/" target="_blank">Final Project</a></h4>
+        <img src="chess.png" class="full-width" />
+        <p>
+            On my final project I built a site for a home bussiness owner. She wanted a site where she could display some of her products as well as the pricing. Payment system was introduced but not implemented due to how the bussiness is run.
+        </p>
     </div>
     <br class="clear" />
 
@@ -178,23 +172,28 @@ end</code></pre>
     <p class="skills-and-tools">Luis has developed proficiency and expertise in the following programming languages and comfort with the following tools.</p>
 
     <div class="icons">
-      <a href="https://github.com/luis-codes"><img src="github.png" class="icon"/></a>
-	    <img src="rubocop.png" class="icon"/>
-	    <img src="trello.png" class="icon"/>
-	    <img src="slack.png" class="icon"/>
-	    <img src="codeship.png" class="icon"/>
+        <a href="https://github.com/luis-codes"><img src="github.png" class="icon" /></a>
+        <img src="rubocop.png" class="icon" />
+        <img src="trello.png" class="icon" />
+        <img src="slack.png" class="icon" />
+        <img src="codeship.png" class="icon" />
+        <br class="clear" />
+        <img src="skills.png" />
+        <br />
+        <div data-iframe-width="150" data-iframe-height="130" data-share-badge-id="e43ef173-bc8e-4d90-94f0-b27577edf2ce" data-share-badge-host="https://www.youracclaim.com"></div>
+        <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="130" data-share-badge-id="14aa7a34-4d3c-42b4-9c1b-fc80b96d49f8" data-share-badge-host="https://www.youracclaim.com"></div>
+        <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="130" data-share-badge-id="29fc6db6-7979-412a-aeac-8db90db1cb94" data-share-badge-host="https://www.youracclaim.com"></div>
+        <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+    </div>
 
-	    <br class="clear" />
-	    <img src="skills.png" />
-	</div>
-
-	<div class="contact-me" id="hire-me">
-		<h3 class="contact-headline">Contact</h3>
-		<hr class="yellow" />
-		<p class="contact-info">Currently entertaining new opportunities. Please get in touch via email:</p>
-		<p>
-			<a href="mailto:luismrosado@yahoo.com" class="contact-link">luismrosado@yahoo.com</a>
-		</p>
-	</div>
-	</body>
-</html>
+    <div class="contact-me" id="hire-me">
+        <h3 class="contact-headline">Contact</h3>
+        <hr class="yellow" />
+        <p class="contact-info">Currently entertaining new opportunities. Please get in touch via email:</p>
+        <p>
+            <a href="mailto:luismrosado@yahoo.com" class="contact-link">luismrosado@yahoo.com</a>
+        </p>
+    </div>
+</body></html>
